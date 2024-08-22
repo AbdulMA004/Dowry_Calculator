@@ -9,6 +9,9 @@ body {
     background-size: cover; /* Ensures the background image covers the entire page */
     background-position: center; /* Centers the background image */
     background-repeat: no-repeat; /* Prevents the background image from repeating */
+    margin: 0;
+    padding: 0;
+    padding-top: 60px;
 }
 
 .container {
@@ -103,4 +106,21 @@ button:hover {
     color: #bbb;
     text-decoration: none;
     cursor: pointer;
+}
+
+.site-header {
+    background-color: #a40d0d;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed; /* Fixes the header to the top */
+    top: 0; /* Aligns it to the top */
+    width: 100%; /* Ensures the header spans the full width */
+    z-index: 1000; /* Keeps it above other content */
+}
+
+.site-header h1 {
+    margin: 0;
 }
